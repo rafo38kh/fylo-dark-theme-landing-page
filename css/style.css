@@ -12,6 +12,14 @@ picture {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -19,7 +27,89 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.button {
+  color: white;
+  background: linear-gradient(to left top, #339ecc, #65e2d9);
+  border: 0.1rem solid transparent;
+  border-radius: 5rem;
+  width: 70%;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+.fylo__header {
+  background-color: #202a3c;
+}
+.fylo__logo {
+  width: 9rem;
+}
+.fylo__list {
+  display: flex;
+  gap: 2rem;
+}
+.fylo__link {
+  font-size: 1.3rem;
+  color: white;
+}
+.fylo__main {
+  background-color: #181f2a;
+}
+.fylo__title {
+  line-height: 1.5;
+  font-size: 2.3rem;
+}
+.fylo__subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 2rem;
+  margin: 2rem 0 3rem 0;
+}
+.accessible__section {
+  background-color: #202a3c;
+}
+.accessible__picture {
+  position: relative;
+  margin-bottom: 3rem;
+  z-index: 1;
+}
+.accessible__picture--bg {
+  margin-top: -40rem;
+  margin-bottom: 30rem;
+  width: 100%;
+}
+.accessible__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.footer__attribution {
+  width: 100%;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0rem 0 1rem 0;
+}
+.footer__attribution-link:link, .footer__attribution-link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer__attribution-link:hover, .footer__attribution-link:active {
+  text-decoration: underline;
+}
+
+.container {
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

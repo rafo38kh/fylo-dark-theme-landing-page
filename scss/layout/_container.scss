@@ -1,4 +1,15 @@
+@use "../abstracts/index" as *;
+
 .container {
+  color: $color-White;
+  padding: 3rem 2rem;
+  text-align: center;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__accessible {
   }
 

@@ -1,21 +1,70 @@
-// &__attribution {
-//   width: 100%;
-//   font-size: clamp(1.2rem, 2vw, 1.4rem);
-//   text-align: center;
-//   margin: 0 auto;
-//   padding: 0rem 0 1rem 0;
+.footer {
+  &__info {
+  }
 
-//   &-link:link,
-//   &-link:visited {
-//     text-transform: uppercase;
-//     color: $color-primary;
-//     text-decoration: none;
-//     font-weight: 400;
-//   }
+  &__contacts {
+  }
 
-//   &-link:hover,
-//   &-link:active {
-//     color: $color-primary;
-//     text-decoration: underline;
-//   }
-// }
+  &__location {
+  }
+
+  &__info-wrapper {
+  }
+
+  &__number {
+  }
+
+  &__email {
+  }
+
+  &__menu {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__social {
+  }
+
+  &__social--icons {
+  }
+
+  &__social--list {
+  }
+
+  &__social--item {
+  }
+  &__social--link {
+  }
+
+  &__wrapper {
+  }
+
+  &__attribution {
+    width: 100%;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    text-align: center;
+    margin: 0 auto;
+    padding: 0rem 0 1rem 0;
+
+    &-link:link,
+    &-link:visited {
+      text-transform: uppercase;
+      //   color: $color-primary;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    &-link:hover,
+    &-link:active {
+      //   color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}

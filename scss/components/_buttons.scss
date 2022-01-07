@@ -1,4 +1,17 @@
+@use "../abstracts/index" as *;
+
 .button {
+  color: $color-White;
+  background: linear-gradient(to left top, $color-blue, $color-cyan);
+  border: 0.1rem solid transparent;
+  border-radius: 5rem;
+  width: 70%;
+  padding: 1.5rem;
+  transition: all 0.3s;
+
   &__accessible {
+  }
+
+  &__subscription {
   }
 }

@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="fylo__header">
-      <div class="container">
+      <div class="container container__header">
         <img
           src="images/logo.svg"
           alt=""
@@ -59,23 +59,32 @@
             class="accessible__picture"
             aria-hidden="true"
           />
-          <h1 class="fylo__title fylo__title--primary">
-            All your files in one secure location, accessible anywhere.
-          </h1>
-          <h2 class="fylo__subtitle fylo__subtitle--primary">
-            Fylo stores all your most important files in one secure location.
-            Access them wherever you need, share and collaborate with friends
-            family, and co-workers.
-          </h2>
-          <button
-            class="button button__accessible"
-            aria-label="Submit button"
-            type="submit"
-            value="Submit"
-          >
-            Get Started
-          </button>
+          <div class="accessible__wrapper">
+            <h1 class="fylo__title fylo__title--primary">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <h2 class="fylo__subtitle fylo__subtitle--primary">
+              Fylo stores all your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends
+              family, and co-workers.
+            </h2>
+            <button
+              class="button button__accessible"
+              aria-label="Submit button"
+              type="submit"
+              value="Submit"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
+        ​<picture class="accessible__picture--bg" aria-hidden="true">
+          <source
+            srcset="./images/bg-curvy-desktop.svg"
+            media="(min-width: 600px)"
+          />
+          <img src="images/bg-curvy-mobile.svg" alt="" />
+        </picture>
       </section>
 
       <section class="suggestions__section">
@@ -286,7 +295,7 @@
           </p>
           <div class="footer__info-wrapper">
             <p class="footer__number">+1-543-123-4567</p>
-            <p class="footer__mail">example@fylo.com</p>
+            <p class="footer__email">example@fylo.com</p>
           </div>
         </div>
 

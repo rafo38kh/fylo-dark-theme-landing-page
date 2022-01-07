@@ -1,7 +1,25 @@
+@use "../abstracts/index" as *;
+
 .accessible {
   &__section {
+    background-color: $color-testimonials--background;
   }
 
   &__picture {
+    position: relative;
+    // padding: 0 3rem;
+    margin-bottom: 3rem;
+    z-index: 1;
+    &--bg {
+      margin-top: -40rem;
+      margin-bottom: 30rem;
+      width: 100%;
+      // z-index: -1;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
   }
 }
