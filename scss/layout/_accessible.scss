@@ -10,12 +10,17 @@
     margin-bottom: 3rem;
     z-index: 1;
     @media (min-width: 810px) {
-      max-width: 75rem;
-      margin: 0 auto 10rem;
+      max-width: 72rem;
+      margin: 0 auto 3rem;
     }
     &--bg {
-      margin-top: -40rem;
+      margin-top: -34rem;
       margin-bottom: 30rem;
+
+      @media (min-width: 1140px) {
+        margin-top: -30rem;
+        margin-bottom: 0;
+      }
     }
   }
 

@@ -7,7 +7,21 @@
   border-radius: 5rem;
   width: 23.5rem;
   padding: 1.5rem;
-  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      to left top,
+      hsl(198, 85%, 69%),
+      hsl(176, 93%, 83%)
+    );
+  }
+
+  @media (min-width: 1140px) {
+    width: 28rem;
+    padding: 1.7rem;
+    font-size: 1.6rem;
+  }
 
   &__accessible {
   }
@@ -15,5 +29,10 @@
   &__subscription {
     width: 25rem;
     max-width: 25rem;
+    @media (min-width: 1140px) {
+      width: 20rem;
+      padding: 1rem;
+      font-size: 1.4rem;
+    }
   }
 }

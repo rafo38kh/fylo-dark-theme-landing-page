@@ -2,7 +2,6 @@
 
 .fylo {
   &__header {
-    // padding: 3rem 2rem;
     background-color: $color-testimonials--background;
   }
 
@@ -10,7 +9,7 @@
     width: 9rem;
 
     @media (min-width: 810px) {
-      width: 15rem;
+      width: 18rem;
     }
     &--header {
     }
@@ -18,6 +17,9 @@
     &--footer {
       width: 19rem;
       margin-bottom: 5rem;
+      @media (min-width: 1140px) {
+        width: 9rem;
+      }
     }
   }
 
@@ -57,7 +59,12 @@
 
   &__title {
     line-height: 1.5;
-    font-size: 2.3rem;
+    font-size: clamp(2.3rem, 3vw, 4rem);
+
+    @media (min-width: 1140px) {
+      max-width: 75rem;
+      margin: 0 auto;
+    }
     &--primary {
     }
 
@@ -67,19 +74,30 @@
     }
 
     &--tertiary {
+      max-width: 50rem;
+      margin: 0;
+      // font-size: 4rem;
     }
 
     &--quaternary {
-      font-size: 1.8rem;
+      font-size: clamp(1.8rem, 2.5vw, 3.2rem);
     }
   }
 
   &__subtitle {
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 1.7vw, 2rem);
     font-weight: 400;
+    font-family: $font-primary;
     line-height: 1.5;
     padding: 0 2rem;
     margin: 2rem 0 3rem 0;
+
+    @media (min-width: 768px) {
+      max-width: 62rem;
+      padding: 0;
+      margin: 3rem auto 3rem auto;
+    }
+
     &--primary {
     }
 
@@ -87,15 +105,26 @@
       margin: 0;
       padding: 0 1rem;
       max-width: 50rem;
+
+      @media (min-width: 1140px) {
+        padding: 0;
+        max-width: 38rem;
+        font-size: 1.4rem;
+      }
     }
 
     &--tertiary {
       padding: 0;
       margin: 2rem 0;
+      @media (min-width: 1140px) {
+        font-size: 1.6rem;
+      }
     }
 
     &--quaternary {
-      font-size: 1.3rem;
+      font-size: clamp(1.3rem, 1.3vw, 1.4rem);
+      max-width: 68rem;
+      margin: 1rem auto 4rem auto;
     }
   }
 }

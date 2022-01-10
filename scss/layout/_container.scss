@@ -4,6 +4,10 @@
   color: $color-White;
   padding: 3rem 2rem;
   text-align: center;
+
+  @media (min-width: 1140px) {
+    padding: 7rem 8rem;
+  }
   &__header {
     display: flex;
     align-items: center;
@@ -11,13 +15,25 @@
   }
 
   &__accessible {
+    padding: 0;
   }
 
   &__suggestions {
+    @media (min-width: 1140px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      padding: 0 7rem;
+    }
   }
 
   &__productive {
-    // padding: 0;
+    @media (min-width: 1140px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7rem 10rem;
+    }
   }
 
   &__cards {
@@ -29,12 +45,30 @@
     justify-content: center;
     gap: 2rem;
 
+    @media (min-width: 1140px) {
+      flex-direction: row;
+      padding: 10rem 13rem 35rem;
+      gap: 4rem;
+    }
+
     &::before {
       content: url("./../images/bg-quotes.png");
       position: absolute;
-      top: 8%;
-      left: 14%;
-      z-index: 0;
+      top: 7%;
+      left: 10%;
+      transform: scale(0.4);
+
+      @media (min-width: 810px) {
+        top: 8%;
+        left: 6%;
+        transform: scale(0.6);
+      }
+
+      @media (min-width: 1140px) {
+        top: 10%;
+        left: 8.4%;
+        transform: scale(1);
+      }
     }
   }
 
@@ -47,5 +81,10 @@
     transform: translateX(-50%);
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    @media (min-width: 1140px) {
+      width: 60%;
+      padding: 4rem 7rem;
+    }
   }
 }

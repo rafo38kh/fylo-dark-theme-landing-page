@@ -6,6 +6,11 @@
   }
 
   &__form {
+    @media (min-width: 1140px) {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
   }
 
   &__email {
@@ -16,5 +21,11 @@
     border: 0.1rem solid transparent;
     padding: 1.5rem;
     margin-bottom: 2rem;
+
+    @media (min-width: 1140px) {
+      margin: 0;
+      width: 46rem;
+      padding: 1.5rem;
+    }
   }
 }
