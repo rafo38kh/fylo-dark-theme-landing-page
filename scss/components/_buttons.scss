@@ -5,7 +5,7 @@
   background: linear-gradient(to left top, $color-blue, $color-cyan);
   border: 0.1rem solid transparent;
   border-radius: 5rem;
-  width: 70%;
+  width: 23.5rem;
   padding: 1.5rem;
   transition: all 0.3s;
 
@@ -13,5 +13,7 @@
   }
 
   &__subscription {
+    width: 25rem;
+    max-width: 25rem;
   }
 }

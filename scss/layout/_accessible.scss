@@ -7,14 +7,15 @@
 
   &__picture {
     position: relative;
-    // padding: 0 3rem;
     margin-bottom: 3rem;
     z-index: 1;
+    @media (min-width: 810px) {
+      max-width: 75rem;
+      margin: 0 auto 10rem;
+    }
     &--bg {
       margin-top: -40rem;
       margin-bottom: 30rem;
-      width: 100%;
-      // z-index: -1;
     }
   }
 

@@ -1,25 +1,43 @@
+@use "../abstracts/index" as *;
+
 .cards {
   &__section {
   }
 
   &__card {
+    text-align: left;
+    background-color: $color-testimonials--background;
+    border-radius: 0.5rem;
+    padding: 2.5rem 2rem;
   }
 
   &__paragraph {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
   }
 
   &__human-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   &__human {
+    width: 3rem;
+    border-radius: 50%;
   }
 
   &__human-info {
   }
 
   &__human--name {
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   &__human--position {
+    font-size: 0.9rem;
+    font-weight: 400;
   }
 }
