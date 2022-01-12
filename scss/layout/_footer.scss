@@ -123,7 +123,17 @@
 
   &__social--item {
   }
+
   &__social--link {
+    &:hover {
+      .footer__social--svg {
+        border: 0.1rem solid $color-cyan;
+      }
+
+      .footer__social--svg path {
+        fill: $color-cyan;
+      }
+    }
   }
 
   &__social--link svg {
@@ -133,17 +143,9 @@
     padding: 0.5rem;
     border-radius: 50%;
     transition: all 0.3s;
-
-    &:hover {
-      border: 0.1rem solid $color-cyan;
-
-      &--link svg path {
-        fill: $color-cyan;
-      }
-    }
   }
 
-  &__social--link svg path {
+  &__social--svg path {
     fill: $color-White;
   }
 
@@ -153,7 +155,6 @@
   &__attribution {
     width: 100%;
     font-size: 1rem;
-    //clamp(1.2rem, 2vw, 1.4rem);
     text-align: center;
     margin: 0 auto;
     padding: 0rem 0 1rem 0;
@@ -161,7 +162,7 @@
     &-link:link,
     &-link:visited {
       text-transform: uppercase;
-      //   color: $color-primary;
+      color: $color-cyan;
       text-decoration: none;
       font-weight: 400;
     }

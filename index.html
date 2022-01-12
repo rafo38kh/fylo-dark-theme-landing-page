@@ -266,16 +266,22 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
+          <!-- <div class="subscription__wrapper"> -->
           <form action="#" class="subscription__form js-form">
-            <input
-              name="email"
-              class="subscription__email js-input"
-              placeholder="email@example.com"
-              aria-label="Email input"
-            />
+            <div class="subscription__wrapper">
+              <input
+                name="email"
+                class="subscription__email js-input"
+                placeholder="email@example.com"
+                aria-label="Email input"
+              />
+              <p class="subscription__error js-error">
+                Please enter a valid email address
+              </p>
+            </div>
 
             <button
-              class="button button__subscription"
+              class="button button__subscription js-button"
               aria-label="Submit button"
               type="submit"
               value="Submit"
@@ -283,6 +289,8 @@
               Get Started For Free
             </button>
           </form>
+
+          <!-- </div> -->
         </div>
       </section>
     </main>
@@ -346,7 +354,7 @@
                     focusable="false"
                     data-prefix="fab"
                     data-icon="facebook-f"
-                    class="svg-inline--fa fa-facebook-f fa-w-10"
+                    class="footer__social--svg"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
@@ -365,7 +373,7 @@
                     focusable="false"
                     data-prefix="fab"
                     data-icon="twitter"
-                    class="svg-inline--fa fa-twitter fa-w-16"
+                    class="footer__social--svg"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -384,7 +392,7 @@
                     focusable="false"
                     data-prefix="fab"
                     data-icon="instagram"
-                    class="svg-inline--fa fa-instagram fa-w-14"
+                    class="footer__social--svg"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"

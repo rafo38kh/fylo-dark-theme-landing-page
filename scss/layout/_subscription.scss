@@ -5,27 +5,43 @@
     position: relative;
   }
 
+  &__wrapper {
+    margin-bottom: 1rem;
+    @media (min-width: 810px) {
+      width: 70%;
+    }
+  }
+
   &__form {
-    @media (min-width: 1140px) {
+    width: 100%;
+    @media (min-width: 810px) {
       display: flex;
       justify-content: center;
-      gap: 3rem;
+      align-items: start;
+      gap: 2rem;
     }
+  }
+
+  &__error {
+    font-size: 1.2rem;
+    margin-left: -4rem;
+    color: $color-error;
+    visibility: hidden;
   }
 
   &__email {
     background-color: #fff;
     width: 25rem;
-    max-width: 70rem;
+    max-width: 60rem;
     border-radius: 5rem;
     border: 0.1rem solid transparent;
     padding: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 
-    @media (min-width: 1140px) {
-      margin: 0;
-      width: 46rem;
-      padding: 1.5rem;
+    @media (min-width: 810px) {
+      // margin: 0;
+      width: 100%;
+      padding: 1.3rem;
     }
   }
 }
