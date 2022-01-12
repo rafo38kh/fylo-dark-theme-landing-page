@@ -1,7 +1,6 @@
 const form = document.querySelector(".js-form");
 const input = document.querySelector(".js-input");
 const error = document.querySelector(".js-error");
-const button = document.querySelector(".js-button");
 
 const checkEmail = (inputs) => {
   const regex =

@@ -23,6 +23,8 @@
     color: $color-cyan;
 
     &--wrapper {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
       display: flex;
       align-items: flex-start;
@@ -37,9 +39,10 @@
           color: $color-White;
         }
 
-        // .productive__arrow {
-        //   filter: brightness(0) invert(1);
-        // }
+        .productive__arrow {
+          -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+        }
       }
     }
   }

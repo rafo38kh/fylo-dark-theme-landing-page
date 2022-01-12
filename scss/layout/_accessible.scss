@@ -9,10 +9,12 @@
     position: relative;
     margin-bottom: 3rem;
     z-index: 1;
+
     @media (min-width: 810px) {
       max-width: 72rem;
       margin: 0 auto 3rem;
     }
+
     &--bg {
       margin-top: -34rem;
       margin-bottom: 30rem;
